@@ -1,0 +1,27 @@
+public class TipeData {
+    public static void main(String[] args) {
+        //Tipe data numerik
+        int angkaBulat = 10;
+        double angkaDesimal = 2.14;
+        
+        //Tipe data teks
+        String teks = "Apapun!";
+        
+        //Tipe data karakter
+        char karakter = 'A';
+        
+        //Tipe data boolean
+        boolean benar = true;
+        boolean salah = false;
+        
+        //Menampilkan nilai variabel ke konsole
+        System.out.println("Angka Bulat: " + angkaBulat);
+        System.out.println("Angka Desimal: " + angkaDesimal);
+        System.out.println("Teks: " + teks);
+        System.out.println("Karakter: " + karakter);
+        System.out.println("Angka Bulat: " + angkaBulat);
+        System.out.println("Boolean: " + benar);
+        System.out.println("Boolean: " + salah);
+    
+    }
+}
