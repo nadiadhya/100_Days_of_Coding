@@ -1,0 +1,21 @@
+
+import java.util.ArrayList;
+
+public class NonPrimitif {
+    public static void main(String[] args) {
+        
+        //ArrayList yang berisi objek-objek String
+        ArrayList<String> daftarNama = new ArrayList<>();
+        
+        //Menambahakan data ke ArrayList
+        daftarNama.add("Nadia");
+        daftarNama.add("Diaaa");
+        daftarNama.add("Nana");
+        
+        //Mengakses dan menampilkan data dari ArrayList
+        System.out.println("Daftar Nama:");
+        for (String nama : daftarNama){
+            System.out.println(nama);
+        }
+    }
+}
