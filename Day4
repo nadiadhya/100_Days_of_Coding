@@ -1,0 +1,16 @@
+public class KonversiString {
+    public static void main(String[] args) {
+        
+        //Deklarasi Variabel
+        String strAngka = "140203";
+        String strNilai = "18.08";
+        
+        //Konversi string
+        int angka = Integer.valueOf(strAngka);
+        float nilai = Float.valueOf(strNilai);
+        
+        //Tampilkan hasil konversi
+        System.out.println("Angka: " + angka);
+        System.out.println("Nilai: " + nilai);
+    }
+}
