@@ -1,0 +1,19 @@
+public class KonversiTipeDataPrimitifKeString {
+    public static void main(String[] args) {
+        //Deklarasi variabel
+        int bilanganInt = 14;
+        double bilanganDouble = 14.3;
+        
+        //konversi tipe data primitif
+        String bilanganIntString = String.valueOf(bilanganInt);
+        String bilanganDoubleString = String.valueOf(bilanganDouble);
+        
+        //mencetak hasil
+        System.out.println("Nilai bilanganInt: " + bilanganInt);
+        System.out.println("Nilai bilanganIntString: " + bilanganIntString);
+        System.out.println();
+        System.out.println("Nilai bilanganDouble: " + bilanganDouble);
+        System.out.println("Nilai bilanganDoubleString: " + bilanganDoubleString);
+        System.out.println();       
+    }    
+}
