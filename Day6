@@ -1,0 +1,17 @@
+public class Variabel {
+    public static void main(String[] args) {
+        //Deklarasi variabel
+        int nilaiInt = 14;
+        float nilaiFloat = (float) 3.14;
+        double nilaiDouble = 2.140203;
+        char nilaiChar = 'N';
+        String nilaiStr = "Apapun!!!";
+        
+        //Menampilkan Nilai Variabel
+        System.out.println("Nilai variabel Int: " + nilaiInt);
+        System.out.println("Nilai variabel Float: " + nilaiFloat);
+        System.out.println("Nilai variabel Double: " + nilaiDouble);
+        System.out.println("Nilai variabel Char: " + nilaiChar);
+        System.out.println("Nilai variabel String: " + nilaiStr);
+    }
+}
