@@ -1,0 +1,19 @@
+public class Deklarasi {
+    public static void main(String[] args) {
+        //Deklarasi variabel integer
+        int x = 14;
+        int y = 28;
+        
+        // Deklarasi variabel float
+        float z = 14.2f;
+        
+        // Deklarasi variabel string 
+        String nama = "Siapapun!";
+        
+        // Menampilkan nilai variabel
+        System.out.println("Nilai int = " + x);
+        System.out.println("Nilai int = " + y);
+        System.out.println("Nilai float = " + z);
+        System.out.println("Nilai nama = " + nama);
+    }
+}
