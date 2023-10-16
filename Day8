@@ -1,0 +1,20 @@
+public class Inisialisasi {
+    public static void main(String[] args) {
+        
+        //Inisialisasi variabel integer
+        int nilaiInt = 14;
+        System.out.println("Nilai int: " + nilaiInt);
+        
+        //Inisialisasi variabel float 
+        float nilaiFloat = 2.5f;
+        System.out.println("Nilai float: " + nilaiFloat);
+        
+        //inisialisasi variabel string 
+        String nilaiString = "apapun!"; 
+        System.out.println("Nilai string: " + nilaiString);
+        
+        //inisialisasi variabel boolean
+        boolean nilaiBoolean = true; 
+        System.out.println("Nilai boolean: " + nilaiBoolean);
+    }
+}
