@@ -1,0 +1,7 @@
+public class Constant {
+    public static final int PI = (int) 3.14;
+    
+    public static void main(String[] args) {
+        System.out.println("Nilai PI: " + PI);
+    }
+}
