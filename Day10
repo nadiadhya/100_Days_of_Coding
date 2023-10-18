@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class InputOutput {
+    public static void main(String[] args) {
+        //Membuat objek scanner untuk mengambil inpiut
+        Scanner scanner = new Scanner(System.in);
+        
+        //Meminta pengguna untuk memasukkan nama
+        System.out.println("Masukkan Nama Anda: ");
+        String nama = scanner.nextLine();
+        
+        //Meminta pengguna untuk memasukkan usia
+        System.out.println("Masukkan usia Anda: ");
+        int usia = scanner.nextInt();
+        
+        //Tampikan Output
+        System.out.println("Nama Anda adalah " + nama);
+        System.out.println("Usia Anda adalah " + usia);
+    }
+}
