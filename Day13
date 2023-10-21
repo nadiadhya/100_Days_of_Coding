@@ -1,0 +1,17 @@
+public class Operator {
+    public static void main(String[] args) {
+        // Operator aritmatika
+        int a = 10;
+        int b = 20;
+
+        int c = a + b; // Penjumlahan
+        int d = a - b; // Pengurangan
+        int e = a * b; // Perkalian
+        int f = a / b; // Pembagian
+
+        System.out.println("c = a + b = " + c);
+        System.out.println("d = a - b = " + d);
+        System.out.println("e = a * b = " + e);
+        System.out.println("f = a / b = " + f);
+    }
+}
