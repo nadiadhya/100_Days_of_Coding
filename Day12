@@ -1,0 +1,14 @@
+public class OutputKeConsole {
+    public static void main(String[] args) {
+        
+        //Mencetak pesan ke console
+        System.out.println("Apapun!");
+        
+        //Mencetak variable ke console
+        int angka = 14;
+        System.out.println("Nilai angka: " + angka);
+        
+        //mencetak output format
+        System.out.printf("%d + %d = %d\n", 14, 28, 14 + 28);
+    }    
+}
