@@ -1,0 +1,19 @@
+public class OperatorPenugasan {
+    public static void main(String[] args) {
+        // deklarasi variabel
+        int a = 10;
+        int b = 20;
+
+        // operator penugasan sederhana
+        a += 10; // a = a + 10
+        b -= 10; // b = b - 10
+
+        // operator penugasan gabungan
+        a = a * 2; // a = a * 2
+        b /= 2; // b = b / 2
+
+        // cetak hasil
+        System.out.println("Nilai a = " + a);
+        System.out.println("Nilai b = " + b);
+    }
+}
