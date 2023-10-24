@@ -1,0 +1,24 @@
+public class OperatorPerbandingan {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int a = 10;
+        int b = 20;
+
+        // Operator perbandingan
+        boolean samaDengan = a == b;
+        boolean tidakSamaDengan = a != b;
+        boolean lebihBesar = a > b;
+        boolean lebihKecil = a < b;
+        boolean lebihBesarAtauSamaDengan = a >= b;
+        boolean lebihKecilAtauSamaDengan = a <= b;
+
+        // Menampilkan hasil perbandingan
+        System.out.println("a == b: " + samaDengan);
+        System.out.println("a != b: " + tidakSamaDengan);
+        System.out.println("a > b: " + lebihBesar);
+        System.out.println("a < b: " + lebihKecil);
+        System.out.println("a >= b: " + lebihBesarAtauSamaDengan);
+        System.out.println("a <= b: " + lebihKecilAtauSamaDengan);
+    }
+}
