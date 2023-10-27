@@ -1,0 +1,14 @@
+public class PercabanganIfElse {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int nilai = 7;
+
+        // Percabangan if-else
+        if (nilai > 5) {
+            System.out.println("Nilai lebih dari 5");
+        } else {
+            System.out.println("Nilai kurang dari atau sama dengan 5");
+        }
+    }
+}
