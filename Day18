@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class PercabanganIf {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int nilai = 7;
+
+        // Percabangan if
+        if (nilai >= 7) {
+            System.out.println("Selamat, Anda lulus ujian!");
+        }
+
+        // Akhir program
+        System.out.println("Program selesai!");
+    }
+}
