@@ -1,0 +1,18 @@
+public class PercabanganIfElseIfElse {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int nilai = 100;
+
+        // Percabangan if-else if-else
+        if (nilai >= 90) {
+            System.out.println("Nilai A");
+        } else if (nilai >= 80) {
+            System.out.println("Nilai B");
+        } else if (nilai >= 70) {
+            System.out.println("Nilai C");
+        } else {
+            System.out.println("Nilai D");
+        }
+    }
+}
