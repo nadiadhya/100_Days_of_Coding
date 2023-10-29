@@ -1,0 +1,13 @@
+public class PerulanganFor {
+
+    public static void main(String[] args) {
+        // Inisialisasi variabel
+        int i = 14;
+
+        // Perulangan for
+        for (i = 4; i <= 50; i++) {
+            // Tampilkan nilai i
+            System.out.println(i);
+        }
+    }
+}
