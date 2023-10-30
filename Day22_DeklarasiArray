@@ -1,0 +1,16 @@
+public class DeklarasiArray {
+    public static void main(String[] args) {
+        //Deklarasi array
+        int[] nilai = new int[6];
+        
+        //Inisialisasi array
+        for (int i = 0; i < nilai.length; i++){
+            nilai[i] = i + 1;
+        }
+        
+        //Menampilkan isi array
+        for (int i = 0; i < nilai.length; i++){
+            System.out.println(nilai[i]);
+        }
+    }
+}
