@@ -1,0 +1,24 @@
+public class Fungsi {
+
+    public static void main(String[] args) {
+        int a = 14;
+        int b = 28;
+
+        // Fungsi tanpa parameter
+        cetak();
+
+        // Fungsi dengan parameter
+        int hasil = tambah(a, b);
+        System.out.println("Hasil penjumlahan: " + hasil);
+    }
+
+    // Fungsi tanpa parameter
+    public static void cetak() {
+        System.out.println("Apapun!");
+    }
+
+    // Fungsi dengan parameter
+    public static int tambah(int a, int b) {
+        return a + b;
+    }
+}
