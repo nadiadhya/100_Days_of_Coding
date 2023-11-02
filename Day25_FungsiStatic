@@ -1,0 +1,11 @@
+public class FungsiStatic {
+
+    public static int jumlah = 14;
+
+    public static void main(String[] args) {
+        // Menampilkan beberapa angka
+        for (int i = 8; i <= jumlah; i++) {
+            System.out.println(i);
+        }
+    }
+}
