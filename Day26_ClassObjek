@@ -1,0 +1,27 @@
+public class ClassObjek {
+
+    public static void main(String[] args) {
+        // Membuat objek
+        Manusia manusia = new Manusia();
+
+        // Mengakses atribut
+        manusia.nama = "Nadia";
+        manusia.umur = 20;
+
+        // Mengakses method
+        manusia.tampilkanData();
+    }
+}
+
+class Manusia {
+
+    // Atribut
+    String nama;
+    int umur;
+
+    // Method
+    void tampilkanData() {
+        System.out.println("Nama: " + nama);
+        System.out.println("Umur: " + umur);
+    }
+}
