@@ -1,0 +1,17 @@
+public class FungsiDenganBeberapaParameter {
+
+    public static void main(String[] args) {
+        int a = 14;
+        int b = 28;
+
+        // memanggil fungsi dengan dua parameter
+        int hasil = perkalian(a, b);
+
+        System.out.println("Hasil perkalian: " + hasil);
+    }
+
+    // fungsi dengan dua parameter
+    public static int perkalian(int x, int y) {
+        return x * y;
+    }
+}
