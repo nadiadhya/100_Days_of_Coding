@@ -1,0 +1,24 @@
+package com.example.arraylist;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Membuat ArrayList
+        ArrayList<String> nama = new ArrayList<>();
+
+        // Menambah elemen ke ArrayList
+        nama.add("Nadia");
+        nama.add("Diaaa");
+        nama.add("Nana");
+        nama.add("Siapapun!");
+
+        // Menampilkan jumlah elemen ArrayList
+        System.out.println("Jumlah elemen: " + nama.size());
+
+        // Menampilkan isi ArrayList
+        System.out.println("Isi ArrayList: " + nama);
+    }
+}
