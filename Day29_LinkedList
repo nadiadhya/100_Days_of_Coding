@@ -1,0 +1,23 @@
+package com.example.linkedlist;
+
+import java.util.LinkedList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Membuat LinkedList
+        LinkedList<String> nama = new LinkedList<>();
+
+        // Menambah elemen ke LinkedList
+        nama.add("Nadia");
+        nama.add("Dia");
+        nama.add("Nana");
+
+        // Menampilkan jumlah elemen LinkedList
+        System.out.println("Jumlah elemen: " + nama.size());
+
+        // Menampilkan isi LinkedList
+        System.out.println("Isi LinkedList: " + nama);
+    }
+}
