@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Add {
+    
+    public static void main(String[] args) {
+        //Buat objek Array List
+        ArrayList<String> data = new ArrayList<>();
+        
+        //Menambah data ke dalam ArrayList
+        data.add("Data 1");
+        data.add("Data 2");
+        data.add("Data 3");
+        
+       //Menampilkan data dari ArrayList
+       for (String d : data){
+           System.out.println(d);
+       }
+    }
+}
