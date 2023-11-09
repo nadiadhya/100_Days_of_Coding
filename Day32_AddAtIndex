@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class AddAtIndex {
+
+    public static void main(String[] args) {
+
+        // Buat ArrayList
+        ArrayList<String> list = new ArrayList<>();
+
+        // menambahkan elemen ke ArrayList
+        list.add("A");
+        list.add("B");
+        list.add("C");
+
+        // Menambahkan elemen baru ke indeks sesuai yang kita mau
+        list.add(3, "D");
+
+        // Menampilkan isi ArrayList
+        System.out.println(list);
+    }
+}
