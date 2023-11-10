@@ -1,0 +1,16 @@
+import java.util.LinkedList;
+
+public class AddFirst {
+    public static void main(String[] args) {
+        //Membuat Objek LinkedList
+        LinkedList<String> list = new LinkedList<>();
+        
+        //Menambah eleman ke LinkedList
+        list.addFirst("A");
+        list.addFirst("B");
+        list.addFirst("C");
+        
+        //Mencetak LinkedList
+        System.out.println(list);
+    }
+}
