@@ -1,0 +1,10 @@
+public class DdLast {
+    
+    public static void main(String[] args) {
+        //Membuat array
+        int[] arr = {1, 2, 3, 4, 5};
+        
+        //Menampilkan elemen array 
+        System.out.println("Elemen gterakhir array: " + arr[arr.length - 1]);
+    }
+}
