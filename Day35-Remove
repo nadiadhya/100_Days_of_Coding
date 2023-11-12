@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class Remove {
+
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+
+        // Remove the element at index 2
+        list.remove(2);
+
+        // Print the list
+        for (String item : list) {
+            System.out.println(item);
+        }
+    }
+}
