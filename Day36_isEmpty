@@ -1,0 +1,18 @@
+public class isEmpty {
+
+    public static void main(String[] args) {
+        String str = "";
+
+        System.out.println("Nilai str adalah: " + str);
+        System.out.println("Apakah str kosong? " + isEmpty(str));
+
+        str = "Apapun!";
+
+        System.out.println("\nNilai str adalah: " + str);
+        System.out.println("Apakah str kosong? " + isEmpty(str));
+    }
+
+    public static boolean isEmpty(String str) {
+        return str.trim().isEmpty();
+    }
+}
