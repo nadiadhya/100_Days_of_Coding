@@ -15,7 +15,7 @@ public class Size {
         System.out.println("Tinggi: " + dimension.height);
 
         // Ubah ukuran frame menjadi 500x300
-        frame.setSize(5000, 3000);
+        frame.setSize(500, 300);
 
         // menampilkan ukuran frame yang baru
         System.out.println("Lebar: " + frame.getSize().width);
