@@ -1,0 +1,27 @@
+import java.awt.Dimension;
+import java.awt.Frame;
+
+public class Size {
+
+    public static void main(String[] args) {
+        // membuat sebuah frame
+        Frame frame = new Frame("Size");
+
+        // Mendapatkan ukuran frame saat ini
+        Dimension dimension = frame.getSize();
+
+        // Menampilkan ukuran frame di konsol
+        System.out.println("Lebar: " + dimension.width);
+        System.out.println("Tinggi: " + dimension.height);
+
+        // Ubah ukuran frame menjadi 500x300
+        frame.setSize(5000, 3000);
+
+        // menampilkan ukuran frame yang baru
+        System.out.println("Lebar: " + frame.getSize().width);
+        System.out.println("Tinggi: " + frame.getSize().height);
+
+        // Tampilkan frame
+        frame.setVisible(true);
+    }
+}
