@@ -1,0 +1,11 @@
+public class Contains {
+
+    public static void main(String[] args) {
+        String str = "Perkenalkan nama saya Nadia";
+
+        // Cek apakah string "Nadia" ada di str
+        boolean contains = str.contains("Nadia");
+
+        System.out.println("Apakah string 'Nadia' ada di str? " + contains);
+    }
+}
