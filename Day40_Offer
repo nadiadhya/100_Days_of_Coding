@@ -1,0 +1,20 @@
+public class Offer {
+    
+    public static void main(String[] args) {
+        //Deklarasi variabel
+        int harga = 100000;
+        int diskon = 25;
+        
+        //Hitung diskon
+        double diskonPersen = diskon / 100.0;
+        double jumlahDiskon = harga * diskonPersen;
+        
+        //Hitung total harga
+        double totalHarga = harga - jumlahDiskon;
+        
+        //Menampilkan hasil
+        System.out.println("Harga awal : Rp. " + harga);
+        System.out.println("Diskon : Rp. " + jumlahDiskon);
+        System.out.println("Total harga : Rp. " + totalHarga);
+    } 
+}
