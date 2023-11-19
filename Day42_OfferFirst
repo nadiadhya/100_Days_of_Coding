@@ -1,0 +1,19 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class OfferFirst {
+    
+    public static void main(String[] args) {
+        //Membuat objek
+        Deque<Character> data = new ArrayDeque<>();
+        
+        //Memasukkan elemen ke depan deque
+        data.offerFirst('A');
+        data.offerFirst('V');
+        data.offerFirst('A');
+        data.offerFirst('J');
+        
+        //Menampilkan isi deque
+        System.out.println(data);
+    }
+}
