@@ -1,0 +1,19 @@
+import java.util.ArrayDeque;
+
+public class DequeOfferLast {
+
+    public static void main(String[] args) {
+        // Membuat objek ArrayDeque
+        ArrayDeque<String> deque = new ArrayDeque<>();
+
+        // Menambahkan elemen ke deque
+        deque.offerLast("A");
+        deque.offerLast("B");
+        deque.offerLast("C");
+
+        // Menampilkan elemen-elemen di deque
+        for (String element : deque) {
+            System.out.println(element);
+        }
+    }
+}
