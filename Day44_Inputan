@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Inputan {
+    public static void main(String[] args) {
+        //Deklarasi variabel
+        int awal, akhir, i, j;
+        
+        //Membaca Inputan nilai awal dan akhir
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan nilai awal: ");
+        awal = scanner.nextInt();
+        System.out.print("Masukkan nilai akhir: ");
+        akhir = scanner.nextInt();
+        
+        //Mencetak bilangan prima
+        System.out.println("Bilangan prima dari " + awal + " sampai " + akhir + " adalah:");
+        for (i = awal; i <= akhir; i++) {
+            int prima = 1;
+            for (j = 2; j < i; j++) {
+                if (i % j == 0){
+                    prima = 0;
+                    break;
+                }
+            }
+            if (prima == 1){
+                System.out.println(i + " ");
+            }  
+        }
+    }
+}
