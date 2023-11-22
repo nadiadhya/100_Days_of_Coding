@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LuasPersegiPanjang {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Mendeklarasikan variabel
+        int panjang, lebar, luas;
+
+        // Menampilkan Inputan
+        System.out.print("Masukkan panjang: ");
+        panjang = input.nextInt();
+
+        System.out.print("Masukkan lebar: ");
+        lebar = input.nextInt();
+
+        // Menghitung luas persegi panjang
+        luas = panjang * lebar;
+
+        // Menampilkan hasil
+        System.out.println("Luas persegi panjang: " + luas);
+    }
+}
