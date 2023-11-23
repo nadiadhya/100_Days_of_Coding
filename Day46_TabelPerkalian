@@ -1,0 +1,16 @@
+public class TabelPerkalian {
+    public static void main(String[] args) {
+        //Menampilkan judul tabel
+        System.out.println("Tabel Perkalian");
+        System.out.println("---------------");
+        
+        //Menampilkan baris-baris tabel
+        for (int i = 1; i <= 10; i++) {
+            //Menampilkan kolom-kolom tabel
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%d x %d = %d\t", i, j, i * j);                
+            }
+            System.out.println();
+        }
+    }
+}
