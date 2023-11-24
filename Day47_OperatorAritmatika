@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class OperatorAritmatika {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        //Memasukkan angka pertama
+        System.out.println("Masukkan angka pertama: ");
+        int num1 = scanner.nextInt();
+
+        //Masukkan angka kedua
+        System.out.println("Masukkan angka kedua: ");
+        int num2 = scanner.nextInt();
+        
+        //Menjumlahkan dua angka yang dimasukkan pengguna
+        int sum = num1 + num2;
+        
+        //Menampilkan hasil
+        System.out.println("Hasil: " + sum);
+    }
+}
