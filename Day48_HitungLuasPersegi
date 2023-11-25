@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class HitungLuasPersegi {
+    public static void main(String[] args) {
+        // Membuat objek Scanner untuk mengambil input 
+        Scanner scanner = new Scanner(System.in);
+
+        // Menginput panjang sisi 
+        System.out.print("Masukkan panjang sisi persegi: ");
+        double sisi = scanner.nextDouble();
+
+        // Menghitung luas persegi
+        double luas = sisi * sisi;
+
+        // Menampilkan hasil
+        System.out.println("Luas persegi dengan panjang sisi " + sisi + " adalah: " + luas);
+
+        // Menutup objek Scanner
+        scanner.close();
+    }
+}
