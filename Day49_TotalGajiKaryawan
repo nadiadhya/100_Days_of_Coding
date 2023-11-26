@@ -8,7 +8,7 @@ public class TotalGajiKaryawan {
         int jumlahKaryawan, gajiPerkaryawan, totalGaji;
         
         //Input data
-        System.out.print("Masukkan numalah karyawan: ");
+        System.out.print("Masukkan jumlah karyawan: ");
         jumlahKaryawan = scanner.nextInt();
         System.out.print("Masukkan gaji per karyawan: ");
         gajiPerkaryawan = scanner.nextInt();
