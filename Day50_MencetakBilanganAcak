@@ -1,0 +1,14 @@
+import java.util.Random;
+
+public class BilanganAcak {
+    public static void main(String[] args) {
+        //Membuat objek random
+        Random random = new Random();
+        
+        //Menghasilkan bilangan acak
+        int bilanganAcak = random.nextInt(100);
+        
+        //Menampilakn bilangan acak
+        System.out.println("Bilangan acak : " + bilanganAcak);
+    }
+}
