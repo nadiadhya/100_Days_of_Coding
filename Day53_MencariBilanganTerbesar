@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class BilanganTerbesar {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Masukkan ukuran array: ");
+        int ukuran = input.nextInt();
+        
+        //Membuat array unruk menyimpan bilangan
+        int[] bilangan = new int[ukuran];
+        
+        //Inputan untuk bilangan-bilangan dalam array
+        System.out.println("Masukkan bilangan-bilangan dalam array :");
+        for (int i = 0; i < ukuran; i++) {
+            bilangan[i] = input.nextInt();
+        }
+        //Cari bilangan terbesar
+        int bilanganTerbesar = bilangan[0];
+        for (int i = 1; i < ukuran; i++) {
+            if (bilangan[i] > bilanganTerbesar) {
+                bilanganTerbesar = bilangan[i];
+            }
+        }
+        //Menampilkan bilangan terbesar
+        System.out.println("Bilangan Terbesar : " + bilanganTerbesar);
+    }
+}
