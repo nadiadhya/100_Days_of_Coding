@@ -1,0 +1,23 @@
+public class MendeklarasikanVariabel {
+    public static void main(String[] args) {
+        //Mendeklarasikan Variabel int
+        int AB = 14;
+        int BA = 28;
+        
+        //Mendeklarasikan Variabel String
+        String apapun = "Ya apapun!";
+        String apayah = "Apa yah??";
+        
+        //Mendeklarasikan Variabel Boolean
+        boolean ya = true;
+        boolean tidak = false;
+        
+        //Menapilkan Hasil Deklarasi
+        System.out.println("Nilai int AB: " + AB);
+        System.out.println("Nilai int BA: " + BA);
+        System.out.println("Nilai String 1: " + apapun);
+        System.out.println("Nilai string 2: " + apayah);
+        System.out.println("Nilai Boolean 1: " + ya);
+        System.out.println("Nilai Boolean 2: " + tidak);
+    }    
+}
