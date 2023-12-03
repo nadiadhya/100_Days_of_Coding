@@ -1,0 +1,19 @@
+public class InisialisasiVariabel {
+    public static void main(String[] args) {
+        //Mendeklarasikan Variabel
+        int apapun, apaAjah;
+        double hasil;
+        
+        //Menginisalisasi variabel
+        apapun = 14;
+        apaAjah = 28;
+        
+        //Melakukan operasi menggunakan variabel
+        hasil = apapun * apaAjah;
+        
+        //Menampilkan hasil
+        System.out.println("Apapunnnnn : " + apapun);
+        System.out.println("Apa Ajah : " + apaAjah);
+        System.out.println("Hasilnya Adalah : " + hasil);
+    }
+}
