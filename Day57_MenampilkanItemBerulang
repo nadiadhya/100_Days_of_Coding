@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MenampilkanItemBerulang {
+
+    public static void main(String[] args) {
+        // Buat array untuk menyimpan item
+        String[] items = {"Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"};
+
+        // Menampilkan item secara berulang-ulang
+        for (int i = 0; i < items.length; i++) {
+            System.out.println(items[i]);
+
+            // Minta input dari pengguna untuk menentukan apakah program harus berhenti
+            System.out.print("Lanjutkan? (y/n): ");
+            Scanner scanner = new Scanner(System.in);
+            String userInput = scanner.next();
+
+            // Cek apakah input pengguna adalah "n" (berhenti)
+            if (userInput.equalsIgnoreCase("n")) {
+                System.out.println("Program dihentikan oleh pengguna.");
+                break; // Keluar dari loop jika pengguna ingin menghentikan program
+            }
+        }
+    }
+}
