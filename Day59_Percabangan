@@ -1,0 +1,21 @@
+public class Percabangan {
+
+    public static void main(String[] args) {
+        // Deklarasi variabel
+        int nilai = 50;
+
+        // Percabangan 
+        if (nilai >= 90) {
+            System.out.println("Nilai A Sangat Baik");
+        } else if (nilai >= 80) {
+            System.out.println("Nilai B Baik");
+        } else if (nilai >= 70) {
+            System.out.println("Nilai C Cukup Baik");
+        }else if (nilai >= 60) {
+            System.out.println("Nilai D Kurang");
+        } else {
+            System.out.println("Nilai E Buruk");
+        }
+    }
+}
+
