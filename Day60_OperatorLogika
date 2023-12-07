@@ -1,0 +1,22 @@
+public class OperatorLogika {
+    public static void main(String[] args) {
+
+        // Operator &&
+        int a = 10;
+        int b = 20;
+
+        boolean hasil = a > 0 && b > 0;
+        System.out.println("Hasil a > 0 && b > 0 = " + hasil); // true
+
+        // Operator ||
+        boolean hasil2 = a > 0 || b > 0;
+        System.out.println("Hasil a > 0 || b > 0 = " + hasil2); // true
+
+        // Operator !
+        boolean hasil3 = a > 0;
+        System.out.println("Hasil a > 0 = " + hasil3); // true
+
+        hasil3 = !hasil3;
+        System.out.println("Hasil !a > 0 = " + hasil3); // false
+    }
+}
