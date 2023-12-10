@@ -1,0 +1,11 @@
+public class ForEachExample {
+    public static void main(String[] args) {
+        // Membuat array integer
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Menggunakan loop For Each untuk mengiterasi melalui array
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+    }
+}
