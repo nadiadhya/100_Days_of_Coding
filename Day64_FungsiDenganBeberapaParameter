@@ -1,0 +1,19 @@
+public class FungsiDenganBeberapaParameter {
+
+    public static void main(String[] args) {
+        // Memanggil fungsi dengan beberapa parameter
+        double panjang = 14.0;
+        double lebar = 28.0;
+        double luasPersegiPanjang = hitungLuasPersegiPanjang(panjang, lebar);
+
+        // Menampilkan hasil
+        System.out.println("Luas Persegi Panjang dengan panjang " + panjang +
+                " dan lebar " + lebar + " adalah: " + luasPersegiPanjang);
+    }
+
+    // Mendefinisikan fungsi dengan beberapa parameter
+    public static double hitungLuasPersegiPanjang(double panjang, double lebar) {
+        double luas = panjang * lebar;
+        return luas;
+    }
+}
