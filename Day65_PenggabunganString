@@ -1,0 +1,19 @@
+public class PenggabunagnString {
+
+    public static void main(String[] args) {
+        // Contoh Penggabungan String
+        String namaDepan = "Dhya";
+        String namaBelakang = "Nadia";
+
+        // Menggunakan operator +
+        String fullName1 = namaDepan + " " + namaBelakang;
+
+        // Menggunakan metode concat()
+        String fullName2 = namaDepan.concat(" ").concat(namaBelakang);
+
+        // Menampilkan hasil
+        System.out.println("Full Name (Operator +): " + fullName1);
+        System.out.println("Full Name (Metode concat()): " + fullName2);
+    }
+}
+
