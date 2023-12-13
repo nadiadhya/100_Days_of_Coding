@@ -1,0 +1,16 @@
+public class FlowerView {
+    
+    public static void main(String[] args) {
+        // Memanggil fungsi dan menyimpan return value-nya
+        int jumlahKelopak = calculateJumlahKelopak(3, 4, 5);
+        
+        // Menampilkan hasil return value dari fungsi
+        System.out.println("Total petals: " + jumlahKelopak);
+    }
+    
+    // Fungsi dengan return value dan parameter bertipe data primitif
+    public static int calculateJumlahKelopak(int rose, int sunflower, int lily) {
+        int total = rose + sunflower + lily;
+        return total;
+    }
+}
