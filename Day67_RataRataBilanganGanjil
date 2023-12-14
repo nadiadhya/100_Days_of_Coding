@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class RataRataBilanganGanjil {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int n;
+        System.out.print("Masukkan jumlah bilangan ganjil: ");
+        n = input.nextInt();
+        
+        int[] bilanganGanjil = new int[n];
+        int jumlah = 0;
+        int jumlahBilanganGanjil = 0;
+        
+        System.out.println("Masukkan bilangan ganjil: ");
+        for (int i = 0; i < n; i++) {
+            bilanganGanjil[i] = input.nextInt();
+            if (bilanganGanjil[i] % 2 != 0) {
+                jumlah += bilanganGanjil[i];
+                jumlahBilanganGanjil++;
+            } else {
+                System.out.println("Ini bukan bilangan ganjil, silahkan masukkan bilangan ganjil.");
+                i--;
+            }
+        }
+        
+        double rataRata = (double) jumlah / jumlahBilanganGanjil;
+        System.out.println("Rata-rata bilangan ganjil adalah: " + rataRata);
+    }
+}
