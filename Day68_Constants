@@ -1,0 +1,15 @@
+public class ConstantsExample {
+
+    // Mendefinisikan variabel konstan
+    public static final int MAX_VALUE = 300;
+    public static final String APPLICATION_NAME = "MyApp";
+    public static final double PI = 3.14159;
+
+    public static void main(String[] args) {
+        // Menggunakan variabel konstan
+        System.out.println("Max Value: " + MAX_VALUE);
+        System.out.println("Application Name: " + APPLICATION_NAME);
+        System.out.println("Value of PI: " + PI);
+
+    }
+}
