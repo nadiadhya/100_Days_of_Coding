@@ -1,0 +1,22 @@
+public class OuterClass {
+
+    // Inner class
+    public class InnerClass {
+
+        private void innerMethod() {
+            System.out.println("Inner method dijalankan.");
+        }
+    }
+
+    // Metode main untuk menguji inner class
+    public static void main(String[] args) {
+        // Membuat objek OuterClass
+        OuterClass outerObject = new OuterClass();
+
+        // Membuat objek InnerClass menggunakan objek OuterClass
+        OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+
+        // Memanggil metode inner class
+        innerObject.innerMethod();
+    }
+}
