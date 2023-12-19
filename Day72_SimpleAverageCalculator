@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class SimpleAverageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Memasukkan banyaknya angka
+        System.out.print("Masukkan jumlah angka: ");
+        int jumlahAngka = scanner.nextInt();
+
+        // Memasukkan angka-angka
+        System.out.println("Masukkan angka-angka:");
+        double total = 0;
+
+        for (int i = 1; i <= jumlahAngka; i++) {
+            System.out.print("Angka ke-" + i + ": ");
+            double angka = scanner.nextDouble();
+            total += angka;
+        }
+
+        // Menghitung rata-rata
+        double rataRata = total / jumlahAngka;
+
+        // Menampilkan jumlah dan rata-rata
+        System.out.println("Jumlah angka: " + total);
+        System.out.println("Rata-rata: " + rataRata);
+
+        // Menutup scanner
+        scanner.close();
+    }
+}
