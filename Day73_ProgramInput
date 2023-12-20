@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ProgramInput {
+
+    public static void main(String[] args) {
+        // Menggunakan Scanner untuk mengambil input 
+        Scanner scanner = new Scanner(System.in);
+
+        // Memasukkan Apapun
+        System.out.print("Masukkan Apapun: ");
+
+        // Membaca apapun yang dimasukkan 
+        String input = scanner.nextLine();
+
+        // Menampilkan pesan dimasukkan
+        System.out.println("Anda memasukkan: " + input);
+
+        // Menutup Scanner setelah digunakan
+        scanner.close();
+    }
+}
