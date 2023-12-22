@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class BelanjaBarang {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Input data
+        System.out.print("Nama Barang: ");
+        String namaBarang = input.nextLine();
+
+        System.out.print("Harga Barang: ");
+        int hargaBarang = input.nextInt();
+
+        // Validasi input
+        if (hargaBarang <= 0) {
+            System.out.println("Harga barang harus berupa bilangan positif.");
+            return;
+        }
+
+        // Hitung total harga
+        int totalHarga = hargaBarang;
+
+        // Tampilkan hasil
+        System.out.println("----------------------------------");
+        System.out.println("Nama Barang: " + namaBarang);
+        System.out.println("Harga Barang: " + hargaBarang);
+        System.out.println("Total Harga: " + totalHarga);
+    }
+}
