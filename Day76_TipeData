@@ -1,0 +1,45 @@
+public class TipeData {
+
+    public static void main(String[] args) {
+        // Tipe Data Primitif
+        byte byteVar = 127;
+        short shortVar = 32767;
+        int intVar = 2147483647;
+        long longVar = 9223372036854775807L;
+        float floatVar = 3.14f;
+        double doubleVar = 2.71828;
+        char charVar = 'A';
+        boolean booleanVar = true;
+
+        // Tipe Data Non-Primitif (Objek)
+        Byte byteObj = Byte.valueOf(byteVar);
+        Short shortObj = Short.valueOf(shortVar);
+        Integer intObj = Integer.valueOf(intVar);
+        Long longObj = Long.valueOf(longVar);
+        Float floatObj = Float.valueOf(floatVar);
+        Double doubleObj = Double.valueOf(doubleVar);
+        Character charObj = Character.valueOf(charVar);
+        Boolean booleanObj = Boolean.valueOf(booleanVar);
+
+        // Menampilkan nilai variabel
+        System.out.println("Tipe Data Primitif:");
+        System.out.println("byteVar: " + byteVar);
+        System.out.println("shortVar: " + shortVar);
+        System.out.println("intVar: " + intVar);
+        System.out.println("longVar: " + longVar);
+        System.out.println("floatVar: " + floatVar);
+        System.out.println("doubleVar: " + doubleVar);
+        System.out.println("charVar: " + charVar);
+        System.out.println("booleanVar: " + booleanVar);
+
+        System.out.println("\nTipe Data Non-Primitif:");
+        System.out.println("byteObj: " + byteObj);
+        System.out.println("shortObj: " + shortObj);
+        System.out.println("intObj: " + intObj);
+        System.out.println("longObj: " + longObj);
+        System.out.println("floatObj: " + floatObj);
+        System.out.println("doubleObj: " + doubleObj);
+        System.out.println("charObj: " + charObj);
+        System.out.println("booleanObj: " + booleanObj);
+    }
+}
