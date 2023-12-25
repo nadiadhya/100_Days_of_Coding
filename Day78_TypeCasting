@@ -1,0 +1,20 @@
+public class TypeCasting {
+
+    public static void main(String[] args) {
+        //Konversi dari int ke double
+        int intValue = 5;
+        double doubleValue = (double) intValue;
+
+        System.out.println("Nilai int: " + intValue);
+        System.out.println("Nilai double setelah konversi: " + doubleValue);
+
+        System.out.println(); // Baris kosong
+
+        //Konversi dari double ke int
+        double floatValue = 7.5;
+        int intFromDouble = (int) floatValue;
+
+        System.out.println("Nilai double: " + floatValue);
+        System.out.println("Nilai int setelah konversi: " + intFromDouble);
+    }
+}
