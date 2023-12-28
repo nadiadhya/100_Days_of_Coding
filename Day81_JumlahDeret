@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class JumlahDeret {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Batas Data: ");
+        int angka = scanner.nextInt();
+
+        int jumlah = 0;
+        for (int i = 1; i <= angka; i++) {
+            jumlah += i;
+        }
+
+        System.out.println("Jumlah deret antara 1 sampai " + angka + " adalah " + jumlah);
+    }
+}
