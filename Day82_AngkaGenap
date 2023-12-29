@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        boolean syarat = true;
+        Scanner scanner = new Scanner(System.in);
+
+        while (syarat) {
+            System.out.print("Masukkan Angka : ");
+            int angka = scanner.nextInt();
+
+            if (angka % 2 == 0) {
+                System.out.println("genap");
+            } else if (angka % 2 == 1) {
+                System.out.println("You and I, end");
+                syarat = false;
+            }
+        }
+
+        scanner.close();
+    }
+}
