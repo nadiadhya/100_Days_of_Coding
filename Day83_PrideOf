@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        boolean syarat = true;
+        Scanner scanner = new Scanner(System.in);
+
+        while (syarat) {
+            System.out.print("Masukkan Angka : ");
+            int angka = scanner.nextInt();
+
+            if (angka % 3 == 0) {
+                if (angka % 5 == 0) {
+                    System.out.println("Master Class");
+                } else {
+                    System.out.println("Pride Of 3");
+                }
+            } else if (angka % 5 == 0) {
+                if (angka % 3 == 0) {
+                    System.out.println("Master Class");
+                } else {
+                    System.out.println("Pride Of 5");
+                }
+            }
+
+            // Tambahkan kondisi untuk menghentikan loop jika diperlukan
+            System.out.print("Lanjut? (y/n): ");
+            char lanjut = scanner.next().charAt(0);
+            if (lanjut != 'y') {
+                syarat = false;
+            }
+        }
+
+        scanner.close();
+    }
+}
