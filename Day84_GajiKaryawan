@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class GajiKaryawan {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Gaji anda : ");
+        int gaji = scanner.nextInt();
+
+        System.out.print("Masukkan Jenis Pekerjaan Anda : ");
+        String kerja = scanner.next().toLowerCase();
+
+        if (gaji >= 3000000 && gaji < 5000000) {
+            if (kerja.equals("pns")) {
+                double pajak = (10.0 / 100) * gaji;
+                double gajiBersih = gaji - pajak;
+                System.out.println("Anda Kena Pajak 10%");
+                System.out.println("Gaji bersih Anda Adalah  Rp." + gajiBersih);
+            } else {
+                double pajak = (5.0 / 100) * gaji;
+                double gajiBersih = gaji - pajak;
+                System.out.println("Anda Kena Pajak 5%");
+                System.out.println("Gaji bersih Anda Adalah  Rp." + gajiBersih);
+            }
+        } else if (gaji >= 5000000) {
+            if (kerja.equals("pns")) {
+                double pajak = (15.0 / 100) * gaji;
+                double gajiBersih = gaji - pajak;
+                System.out.println("Anda Kena Pajak 15%");
+                System.out.println("Gaji bersih Anda Adalah  Rp." + gajiBersih);
+            } else {
+                double pajak = (10.0 / 100) * gaji;
+                double gajiBersih = gaji - pajak;
+                System.out.println("Anda Kena Pajak 10%");
+                System.out.println("Gaji bersih Anda Adalah  Rp." + gajiBersih);
+            }
+        } else {
+            System.out.println("Gaji bersih Anda Adalah  Rp." + gaji);
+        }
+        
+        scanner.close();
+    }
+}
