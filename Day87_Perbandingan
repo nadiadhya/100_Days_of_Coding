@@ -1,0 +1,56 @@
+public class Perbandingan {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 2;
+
+        // Lebih Besar Dari ">"
+        System.out.println("~~~~~~ Lebih Besar Dari (>) ~~~~~~");
+        boolean hasil = a > b;
+        System.out.println(a + " > " + b + " = " + hasil);
+        hasil = b > a;
+        System.out.println(b + " > " + a + " = " + hasil);
+        hasil = a > a;
+        System.out.println(a + " > " + a + " = " + hasil);
+
+        // Lebih Kecil Dari "<"
+        System.out.println("\n~~~~~~ Lebih Kecil Dari (<) ~~~~~~");
+        hasil = a < b;
+        System.out.println(a + " < " + b + " = " + hasil);
+        hasil = b < a;
+        System.out.println(b + " < " + a + " = " + hasil);
+        hasil = a < a;
+        System.out.println(a + " < " + a + " = " + hasil);
+
+        // Lebih Besar Dari Sama Dengan (">=")
+        System.out.println("\n~~~~~~ Lebih Besar Dari Sama Dengan(>=) ~~~~~~");
+        hasil = a >= b;
+        System.out.println(a + " >= " + b + " = " + hasil);
+        hasil = b >= a;
+        System.out.println(b + " >= " + a + " = " + hasil);
+        hasil = a >= a;
+        System.out.println(a + " >= " + a + " = " + hasil);
+
+        // Lebih Kecil Dari Sama Dengan ("<=")
+        System.out.println("\n~~~~~~ Lebih Kecil Dari Sama Dengan (<=) ~~~~~~");
+        hasil = a <= b;
+        System.out.println(a + " <= " + b + " = " + hasil);
+        hasil = b <= a;
+        System.out.println(b + " <= " + a + " = " + hasil);
+        hasil = a <= a;
+        System.out.println(a + " <= " + a + " = " + hasil);
+
+        // Sama Dengan ("==")
+        System.out.println("\n~~~~~~ Sama Dengan (==) ~~~~~~");
+        hasil = b == a;
+        System.out.println(b + " == " + a + " = " + hasil);
+        hasil = a == a;
+        System.out.println(a + " == " + a + " = " + hasil);
+
+        // Tidak Sama Dengan ("!=")
+        System.out.println("\n~~~~~~ Tidak Sama Dengan (!=) ~~~~~~");
+        hasil = b != a;
+        System.out.println(b + " != " + a + " = " + hasil);
+        hasil = a != a;
+        System.out.println(a + " != " + a + " = " + hasil);
+    }
+}
