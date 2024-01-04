@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class BeratConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("========================================");
+            System.out.println("Komfersi Berat Ton, Kwintal, Kilogram");
+            System.out.println("========================================");
+            System.out.println("Pilih Satuan Berat Awal");
+            System.out.println("1. Ton");
+            System.out.println("2. Kwintal");
+            System.out.println("3. Kilogram");
+
+            System.out.print("Masukkan Pilihan : ");
+            String pilih = scanner.nextLine();
+
+            if (pilih.equals("1")) {
+                System.out.print("\nMasukkan berat Ton: ");
+                double berat = Double.parseDouble(scanner.nextLine());
+                double kwintal = berat * 10;
+                double kilo = berat * 1000;
+                System.out.printf("%.2f ton = %.2f kwintal%n%.2f ton = %.2f kg%n%n", berat, kwintal, berat, kilo);
+            } else if (pilih.equals("2")) {
+                System.out.print("\nMasukkan berat Kwintal: ");
+                double berat = Double.parseDouble(scanner.nextLine());
+                double ton = berat / 10;
+                double kilo = berat * 100;
+                System.out.printf("%.2f kwintal = %.2f ton%n%.2f kwintal = %.2f kg%n%n", berat, ton, berat, kilo);
+            } else if (pilih.equals("3")) {
+                System.out.print("\nMasukkan berat Kilogram: ");
+                double berat = Double.parseDouble(scanner.nextLine());
+                double ton = berat / 1000;
+                double kwintal = berat / 100;
+                System.out.printf("%.2f kg = %.6f ton%n%.2f kg = %.2f kwintal%n%n", berat, ton, berat, kwintal);
+            } else {
+                System.out.println("Pilihan Tidak Tersedia\n");
+            }
+        }
+    }
+}
