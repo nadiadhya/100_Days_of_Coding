@@ -1,0 +1,47 @@
+public class LampuLalulintas {
+    public static void main(String[] args) {
+        int waktu = 60;
+
+        while (true) {
+            if (waktu >= 30 && waktu <= 60) {
+                System.out.println("Merah");
+                System.out.println(waktu);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                waktu--;
+                clearConsole();
+            } else if (waktu < 30 && waktu >= 0) {
+                System.out.println("Kuning");
+                System.out.println(waktu);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                waktu--;
+                clearConsole();
+            } else if (waktu < 0 && waktu >= -60) {
+                System.out.println("Hijau");
+                System.out.println(waktu + 60);
+                waktu--;
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                clearConsole();
+            } else {
+                waktu += 120;
+            }
+        }
+    }
+
+    private static void clearConsole() {
+        // Clear console screen
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+}
