@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class JarakHari {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("MOHON MASUKKAN DATA DENGAN ANGKA");
+
+        System.out.print("Masukkan Tanggal : ");
+        int day = scanner.nextInt();
+
+        System.out.print("Masukkan Bulan : ");
+        int bulan = scanner.nextInt();
+
+        System.out.print("Masukkan Tahun : ");
+        int tahun = scanner.nextInt();
+
+        int hasil_hari = day - 1;
+        int hasil_bulan = bulan - 1;
+        int hasil_tahun = tahun - 2000;
+
+        if (tahun >= 2000) {
+            int jmlh = hasil_hari + (hasil_bulan * 30) + (hasil_tahun * 360);
+
+            System.out.println("Jarak Hari Antara " + day + "-" + bulan + "-" + tahun + " dengan 1-1-2000 ");
+            System.out.println("adalah :");
+            System.out.println(jmlh + " hari");
+        } else {
+            System.out.println("Mohon Masukkan Tahun di atas 2000");
+        }
+
+        scanner.close();
+    }
+}
