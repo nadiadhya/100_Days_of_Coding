@@ -1,0 +1,13 @@
+public class Data {
+    public static void main(String[] args) {
+        boolean dataBool = true;
+        String dataString = "Nadia";
+        int dataInteger = 23;
+        double dataFloat = 2.5;
+
+        System.out.println(dataBool + " " + Boolean.TYPE.getName());
+        System.out.println(dataString + " " + dataString.getClass().getName());
+        System.out.println(dataInteger);
+        System.out.println(dataFloat);
+    }
+}
