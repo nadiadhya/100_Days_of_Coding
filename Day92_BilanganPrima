@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class BilanganPrima {
+
+    public static boolean isPrima(int x) {
+        for (int i = 2; i < x; i++) {
+            if (x % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static List<Integer> cariBilanganPrima(int awal, int akhir) {
+        List<Integer> listBilanganPrima = new ArrayList<>();
+
+        for (int x = awal; x <= akhir; x++) {
+            if (isPrima(x)) {
+                listBilanganPrima.add(x);
+            }
+        }
+
+        return listBilanganPrima;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Awal : ");
+        int awal = scanner.nextInt();
+
+        System.out.print("Masukkan Akhir : ");
+        int akhir = scanner.nextInt();
+
+        List<Integer> listBilanganPrima = cariBilanganPrima(awal, akhir);
+
+        System.out.printf("Jumlah Bilangan Prima Dari %d-%d adalah %d%n", awal, akhir, listBilanganPrima.size());
+    }
+}
