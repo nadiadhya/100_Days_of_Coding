@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class TebakAngka {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int angkaRahasia = random.nextInt(1000) + 1;
+        int batasPercobaan = 10;
+
+        System.out.println("Tebak Angka Rahasia 1-1000");
+        System.out.println("Kamu memiliki 10 kesempatan");
+
+        for (int percobaan = 0; percobaan < batasPercobaan; percobaan++) {
+            System.out.print("\n[Percobaan " + (percobaan + 1) + "] Masukkan angka: ");
+            int jawaban = scanner.nextInt();
+
+            if (jawaban == angkaRahasia) {
+                System.out.println("Selamat, Tebakanmu Benar");
+                break;
+            } else if (jawaban < angkaRahasia) {
+                System.out.println("Tebakanmu terlalu kecil!");
+            } else {
+                System.out.println("Tebakanmu terlalu besar!");
+            }
+        }
+
+        System.out.println("\nSayang sekali kesempatan habis");
+        System.out.println("Angka Rahasia nya adalah " + angkaRahasia);
+    }
+}
