@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class JarakHari {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Tanggal Saat ini: ");
+        int tglIni = scanner.nextInt();
+        System.out.print("Masukkan Bulan Saat ini (dalam angka): ");
+        int blnIni = scanner.nextInt();
+        System.out.print("Masukkan Tahun Saat ini: ");
+        int thnIni = scanner.nextInt();
+
+        System.out.println(40 + "=");
+        System.out.print("Masukkan Tanggal Yang di Tuju: ");
+        int tglTuju = scanner.nextInt();
+        System.out.print("Masukkan Bulan Yang di Tuju (dalam angka): ");
+        int blnTuju = scanner.nextInt();
+        System.out.print("Masukkan Tahun yang di Tuju: ");
+        int thnTuju = scanner.nextInt();
+
+        int jarakHari = tglIni - tglTuju;
+        int jarakBulan = (blnIni - blnTuju) * 30;
+        int jarakTahun = (thnIni - thnTuju) * 360;
+
+        int hasil = jarakHari + jarakBulan + jarakTahun;
+
+        if (hasil > 0) {
+            System.out.println("=====Jarak Hari=====");
+            System.out.println("dari Tanggal\t: " + tglIni + "-" + blnIni + "-" + thnIni);
+            System.out.println("Ke Tanggal\t: " + tglTuju + "-" + blnTuju + "-" + thnTuju);
+            System.out.println("Adalah " + hasil + " hari yang lalu");
+        } else if (hasil < 0) {
+            System.out.println("=====Jarak Hari=====");
+            System.out.println("dari Tanggal\t: " + tglIni + "-" + blnIni + "-" + thnIni);
+            System.out.println("Ke Tanggal\t: " + tglTuju + "-" + blnTuju + "-" + thnTuju);
+            System.out.println("Adalah " + Math.abs(hasil) + " hari ke depan");
+        } else {
+            System.out.println("Ya Hari INI, Masa Ga Tau");
+        }
+    }
+}
