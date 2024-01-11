@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class BeratBadanIdeal {
+
+    public static double hitungBeratBadanPria(double tinggiBadan) {
+        return (tinggiBadan - 100) - ((tinggiBadan - 100) * 0.1);
+    }
+
+    public static double hitungBeratBadanWanita(double tinggiBadan) {
+        return (tinggiBadan - 100) - ((tinggiBadan - 100) * 0.15);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String lanjut = "y";
+
+        while (lanjut.equals("y")) {
+            clearScreen();
+            System.out.println("========== Menghitung Berat Badan Ideal ==========");
+            System.out.println("Pilih Gender \n1. Laki-Laki\n2. Perempuan");
+            System.out.print("Masukkan Gender : ");
+            String pilih = scanner.nextLine();
+
+            if (pilih.equals("1")) {
+                clearScreen();
+                System.out.print("Masukkan Tinggi Badan Anda (dalam cm) : ");
+                double tinggi = scanner.nextDouble();
+                System.out.printf("\nBerat Badan Ideal Anda adalah : %.2f Kg%n", hitungBeratBadanPria(tinggi));
+                System.out.print("\nApakah Anda Mau Ulang? (y/n) : ");
+                lanjut = scanner.next();
+            } else if (pilih.equals("2")) {
+                clearScreen();
+                System.out.print("Masukkan Tinggi Badan Anda (dalam cm) : ");
+                double tinggi = scanner.nextDouble();
+                System.out.printf("\nBerat Badan Ideal Anda adalah : %.2f Kg%n", hitungBeratBadanWanita(tinggi));
+                System.out.print("\nApakah Anda Mau Ulang? (y/n) : ");
+                lanjut = scanner.next();
+            } else {
+                clearScreen();
+                System.out.println("Pilihan Anda Tidak Tersedia");
+                try {
+                    Thread.sleep(3000); // Menunggu 3 detik
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                lanjut = "y";
+            }
+        }
+
+        clearScreen();
+        System.out.println("========== Program Selesai ==========");
+    }
+
+    private static void clearScreen() {
+        // Clear screen implementation for Windows
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
