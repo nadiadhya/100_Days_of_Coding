@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Faktorial {
+    public static void main(String[] args) {
+        System.out.println("##  Menghitung Faktorial  ##");
+        System.out.println("===========================================");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\nInput angka: ");
+        int angka = scanner.nextInt();
+
+        int hasil = 1;
+        for (int i = 1; i <= angka; i++) {
+            hasil *= i;
+        }
+
+        System.out.println(angka + "! = " + hasil);
+    }
+}
