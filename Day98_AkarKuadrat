@@ -4,7 +4,7 @@ public class AkarKuadrat {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("##  Program Java Mencari Akar Persamaan Kuadrat  ##");
+        System.out.println("##  Mencari Akar Persamaan Kuadrat  ##");
         System.out.println("=====================================================");
         System.out.println();
         System.out.println("Format persamaan: ax^2 + bx + c = 0");
