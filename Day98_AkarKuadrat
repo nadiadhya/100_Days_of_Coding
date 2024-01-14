@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class AkarKuadrat {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("##  Program Java Mencari Akar Persamaan Kuadrat  ##");
+        System.out.println("=====================================================");
+        System.out.println();
+        System.out.println("Format persamaan: ax^2 + bx + c = 0");
+
+        System.out.print("Input nilai a: ");
+        double a = input.nextDouble();
+
+        // nilai b dan c
+        double b = 2.0;
+        double c = -1.0;
+        
+        System.out.println();
+
+        double D = (b * b) - (4 * a * c);
+        System.out.print("Diskriminan = " + D);
+
+        if (D >= 0) {
+            System.out.println(" (akar real)");
+            double x1 = (-b + Math.sqrt(D)) / (2 * a);
+            System.out.println("x1 = " + String.format("%.2f", x1));
+        } else {
+            System.out.println(" (akar imajiner)");
+        }
+
+        input.close();
+    }
+}
