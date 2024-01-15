@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PajakTanah {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan Luas Tanah : ");
+        int luas = scanner.nextInt();
+
+        int harga = luas * 300000;
+        double pajak;
+
+        if (harga >= 50000000 && harga < 100000000) {
+            pajak = harga * (3.0 / 100);
+            System.out.println("Uang bersih " + (harga - pajak));
+        } else if (harga > 100000000) {
+            pajak = harga * (5.0 / 100);
+            System.out.println("Uang bersih " + (harga - pajak));
+        } else {
+            pajak = harga * (1.0 / 100);
+            System.out.println("Uang bersih " + (harga - pajak));
+        }
+    }
+}
